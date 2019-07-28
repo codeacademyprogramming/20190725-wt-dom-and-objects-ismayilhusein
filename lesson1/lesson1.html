@@ -14,38 +14,39 @@
             <div class="container">
              <div class="row my-5">
                  <div class="col-md-6">
-                        <form>
+                        
                                 <div class="form-group">
                                   <label for="exampleInputEmail1">Name</label>
-                                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+                                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Name">
                                 </div>
                                 <div class="form-group">
                                   <label for="exampleInputPassword1">Surname</label>
-                                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Surname">
+                                  <input type="text" class="form-control" id="surname" placeholder="Enter Surname">
                                 </div>
                                 <div class="form-group">
                                         <label for="exampleInputEmail1">Email </label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Example@email.com">
+                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Example@email.com">
                                       </div>
                                       <div class="form-group">
                                             <label for="exampleInputEmail1">Birthday </label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" YYYY-MM-DD">
+                                            <input type="text" class="form-control" id="birthday" aria-describedby="emailHelp" placeholder=" YYYY-MM-DD">
                                           </div>
                                 
-                                <button type="submit" class="btn btn-primary">Save</button>
-                              </form>
+                                <button onclick="alertt()" type="submit" class="btn btn-primary">Save</button>
+                              
                  </div>
                 <div class="col-md-6 border">
                     <div class="row mt-3">
                         <div class="col-md-6">
                                 <div class="form-group">
-                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter student email">
+                                        <input type="text" class="form-control" id="studentemail" aria-describedby="emailHelp" placeholder="Enter student email">
                                       </div>
                         </div>
                         <div class="col-md-6">
                                 <div class="form-group">
-                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter score">
-                                        <button type="submit" class="btn btn-primary float-right mt-2">Add score</button>
+                                        <input type="text" class="form-control" id="score" aria-describedby="emailHelp" placeholder="Enter score">
+                                        <button onclick="" type="submit" class="btn btn-primary float-right mt-2">Add score</button>
+                                       
 
                                       </div>
                         </div>
@@ -57,16 +58,18 @@
              </div>
                 </div>
                 <div class="container">
-                        <table class="table">
+                        <table id="salaries" class="table">
                                 <thead class="thead-white">
-                                  <tr>
-                                    <th scope="col">#</th>
+                                  <tr id="employees">
                                     <th scope="col">Name</th>
                                     <th scope="col">Surname</th>
                                     <th scope="col">Email</th>
                                     <th scope="col">Birthday</th>
                                   </tr>
                                 </thead>
+                                <tbody id="tbody">
+
+                                </tbody>
                                 
                               
                             
